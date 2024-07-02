@@ -17,4 +17,9 @@ class Post extends Model // pewarisan yang menghubungkan table posts
         {
             return $this->belongsTo(User::class);
         }
+
+        public function category(): BelongsTo
+        {
+            return $this->belongsTo(Category::class);
+        }
     }
