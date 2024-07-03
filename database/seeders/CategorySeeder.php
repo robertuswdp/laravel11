@@ -15,15 +15,18 @@ class CategorySeeder extends Seeder
     {
         Category::create([
             'name' => 'Web Programming',
-            'slug' => 'web-programming'
+            'slug' => 'web-programming',
+            'color' => 'red'
         ]);
         Category::create([
             'name' => 'Web Design',
-            'slug' => 'web-design'
+            'slug' => 'web-design',
+            'color' => 'green'
         ]);
         Category::create([
             'name' => 'Personal',
-            'slug' => 'personal'
+            'slug' => 'personal',
+            'color' => 'yellow'
         ]);
     }
 }
