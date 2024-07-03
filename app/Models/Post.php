@@ -13,6 +13,8 @@ class Post extends Model // pewarisan yang menghubungkan table posts
         // protected $guarded = [];
         protected $fillable = ['title', 'author', 'slug', 'body'];
 
+        protected $with = ['category', 'author']; //lazy loading default
+
         public function author(): BelongsTo
         {
             return $this->belongsTo(User::class);
