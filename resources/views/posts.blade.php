@@ -63,7 +63,7 @@
                     </a>
                     <p class="mb-5 font-light text-gray-500 dark:text-gray-400">{{ Str::limit($post->body, 150) }}</p>
                     <div class="flex justify-between items-center">
-                        <a href="/posts?authors={{ $post->author->username }}">
+                        <a href="/posts?author={{ $post->author->username }}">
                             <div class="flex items-center space-x-3">
                                 <img class="w-7 h-7 rounded-full"
                                     src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/jese-leos.png"
@@ -88,7 +88,7 @@
             @empty
                 <div>
                     <p class="font-semibold text-xl my-4">Article not found!</p>
-                    <a href="/posts" class="block text-blue-600 hover:underline"></a>
+                    <a href="/posts" class="block text-blue-600 hover:underline">&laquo; Back to all Posts</a>
                 </div>
             @endforelse
 
