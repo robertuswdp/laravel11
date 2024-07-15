@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+use Nette\Utils\Paginator;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\ServiceProvider;
 
